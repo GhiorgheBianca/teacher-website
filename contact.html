@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bianca's Contact page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="Logo">
+        <h1>Bianca-Ioana Ghiorghe's Website</h1>
+        <nav>
+            <select id="navigationDropdown">
+                <option value="" disabled selected>Select a Page</option>
+                <option value="index.html">Home</option>
+                <option value="personal_info.html">Personal Info</option>
+                <option value="teaching_subject.html">Teaching Subject</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>E-Mail: bianca.ghiorghe@stud.ubbcluj.ro</p>
+            <p>Phone: 0712345678</p>
+            <p>Address: Mihail Kogălniceanu 1, Cluj-Napoca, Romania</p>
+        </div>
+
+        <div class="on-site-info">
+            <h3>On-Site Information</h3>
+            <p>You can find me on-site at the Babeș-Bolyai University building on street Mihail Kogălniceanu 1, room I1, every Monday from 4 P.M. to 6 P.M.</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Bianca-Ioana Ghiorghe's Website
+    </footer>
+
+    <script>
+        document.getElementById('navigationDropdown').addEventListener('change', function() {
+            var selectedPage = this.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        });
+    </script>
+</body>
+</html>

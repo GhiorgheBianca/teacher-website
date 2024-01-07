@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bianca's Teaching Subjects</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="Logo">
+        <h1>Bianca-Ioana Ghiorghe's Website</h1>
+        <nav>
+            <select id="navigationDropdown">
+                <option value="" disabled selected>Select a Page</option>
+                <option value="index.html">Home</option>
+                <option value="personal_info.html">Personal Info</option>
+                <option value="contact.html">Contact</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <div class="subjects-list">
+            <h3>Advanced programming methods</h3>
+            <p class="subject-description">Below you can find the downloadable content of each seminar.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Seminar No</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>15-03-2024</td>
+                        <td>Classroom A</td>
+                        <td>Description of seminar 1.</td>
+                        <td><a class="download-button" href="#">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>22-03-2024</td>
+                        <td>Classroom B</td>
+                        <td>Description of seminar 2.</td>
+                        <td><a class="download-button" href="#">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>29-03-2024</td>
+                        <td>Classroom C</td>
+                        <td>Description of seminar 3.</td>
+                        <td><a class="download-button" href="#">Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="subjects-list">
+            <h3>Design and programming frameworks</h3>
+            <p class="subject-description">Below you can find the downloadable content of each laboratory.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Laboratory No</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>12-03-2024</td>
+                        <td>Lab 1</td>
+                        <td>Description of lab 1.</td>
+                        <td><a class="download-button" href="#">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>19-03-2024</td>
+                        <td>Lab 2</td>
+                        <td>Description of lab 2.</td>
+                        <td><a class="download-button" href="#">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>26-03-2024</td>
+                        <td>Lab 3</td>
+                        <td>Description of lab 3.</td>
+                        <td><a class="download-button" href="#">Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Bianca-Ioana Ghiorghe's Website
+    </footer>
+
+    <script>
+        document.getElementById('navigationDropdown').addEventListener('change', function() {
+            var selectedPage = this.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bianca's Personal Info</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="Logo">
+        <h1>Bianca-Ioana Ghiorghe's Website</h1>
+        <nav>
+            <select id="navigationDropdown">
+                <option value="" disabled selected>Select a Page</option>
+                <option value="index.html">Home</option>
+                <option value="contact.html">Contact</option>
+                <option value="teaching_subject.html">Teaching Subject</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Personal Information</h2>
+        <div class="personal-info">
+            <img class="author-image" src="author_image.jpg" alt="Author's Image">
+            <div class="author-info">
+                <h3>About Me</h3>
+                <p>Throughout college, I noticed a penchant for courses that are based on layered architecture and object-oriented programming, which is why I gained a lot of knowledge of C++, C# and Java. Also, I enjoyed learning the C and Assembly programming languages as they provide a very close connection with the hardware and the security branch.</p>
+            </div>
+        </div>
+
+        <h2>Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <p class="job-title">Software Engineer at Bosch</p>
+                    <p class="job-dates">August 2022 - Present</p>
+                    <p>• Developed features and improvements for a backend application deployed through Azure that manages electric car batteries, optimizing lifetime</p>
+                    <p>• Worked with Java and Spring frameworks such as JUnit, Java Persistence APIs (JPA) and REST APIs</p>
+                    <p>• Helped in maintaining the quality and reliability of the application through unit tests, integrations tests and load tests</p>
+                    <p>• Worked with various Azure resources such as Application Insights, App Services, Key Vaults, Storage Accounts, Azure Databases, Service Bus Namespaces</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <p class="job-title">Working Student at Bosch</p>
+                    <p class="job-dates">July 2021 - August 2022</p>
+                    <p>Worked on a project whose objective was to improve the indoor environment. It used sensors to measure important parameters such as temperature, pressure, humidity, air quality and sound intensity. Gained experience in Front-End and Back-End development. Worked with:</p>
+                    <p>• HiveMQ message broker with MQTT communication protocol</p>
+                    <p>• Angular 12 (CSS, TypeScript, HTML)</p>
+                    <p>• Apache Maven</p>
+                    <p>• Java 16</p>
+                    <p>• MongoDB as NoSQL database</p>
+                    <p>I was part of the team responsible for the organization of Bosch Future Mobility Challenge 2021. During this event, I improved my communication and organizational skills. I got the chance to collaborate with people from various cultures and background.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hobby-section">
+            <h2 class="hobby-title">Hobbies</h2>
+            <ul class="hobby-list">
+                <li class="hobby-item">Video Games</li>
+                <li class="hobby-item">Western Movies</li>
+                <li class="hobby-item">Traveling</li>
+              </ul>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Bianca-Ioana Ghiorghe's Website
+    </footer>
+
+    <script>
+        document.getElementById('navigationDropdown').addEventListener('change', function() {
+            var selectedPage = this.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        });
+    </script>
+</body>
+</html>
